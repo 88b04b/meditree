@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: '210 Namoogulrim R';
+    src: url('../font/TTNamoogulrimR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: '210 Namoogulrim R 98';
+    src: url('../font/TTNamoogulrimR98.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 1500px;
+    font-family: '210 Namoogulrim R 98';
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol{
+    list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* common styles */
+
+a.pointer{
+    cursor: pointer;
+}
+.sub_title{
+    font-family: '210 Namoogulrim R';
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 100%;
+}
+.title_m{
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 100%;
+}
+.title_s{
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 100%;
+}
+
+/* header */
+
+header{
+    background-color: white;
+}
+#header_inner{
+    width: 1320px;
+    margin: 0 auto;
+}
+#logo{
+    float: left;
+    margin-top: 10px;
+}
+#header_inner>ul{
+    float: right;
+}
+#header_inner>ul>li{
+    float: left;
+    font-size: 20px;
+    margin: 20px;
+    transition: color 0.3s;
+}
+#header_inner>ul>li:hover{
+    color: #47bbac;
+}
+#header_inner>ul>li:last-of-type{
+    margin-right: 0;
+}
+
+/* main_banner */
+
+#main_banner{
+    background-image: url(../images/sub2/mb_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mb_inner{
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    color: #007062;
+}
+.mb_object{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+.mb_text{
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+}
+
+/* section 1 */
+
+#s1_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 75px 0;
+    position: relative;
+}
+#s1_inner .title,
+#s1_inner .sub_title{
+    text-align: center;
+    color: #007062;
+}
+#section1 .title_leaf_L{
+    position: absolute;
+    top: 85px;
+    left: 375px;
+}
+#section1 .title_leaf_R{
+    position: absolute;
+    top: 85px;
+    right: 375px;
+}
+.leaf1{
+    position: absolute;
+    top: 520px;
+    left: 20px;
+    z-index: 5;
+}
+.leaf2{
+    position: absolute;
+    top: 540px;
+    right: 25px;
+    z-index: 5;
+}
+.leaf3{
+    position: absolute;
+    top: 515px;
+    right: -25px;
+    z-index: 5;
+}
+#section1 .card1{
+    width: 550px;
+    height: 320px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 112, 98, 0.15);
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 70px 55px 55px;
+}
+#section1 dl:first-of-type{
+    float:left;
+}
+#section1 dl:last-of-type{
+    float: right;
+}
+.card1 .s1_row1{
+    height: 20px;
+    background-color: #47bbac;
+}
+.card1 .s1_row2{
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+.card1 .s1_row2 h3{
+    margin-bottom: 45px;
+}
+.card1 dd{
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    margin: 0 auto;
+}
+.card1 dd img{
+    margin-right: 10px;
+}
+#section1 .card2{
+    display: block;
+    clear: both;
+    width: 1210px;
+    height: 160px;
+    margin: 0 auto;
+    padding: 50px 0 0 55px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 112, 98, 0.15);
+    background-image: url(../images/sub2/s1_giftcard.png);
+    background-repeat: no-repeat;
+}
+.card2 .title_s{
+    margin-bottom: 15px;
+    color: #007062;
+}
+.card2 p{
+    font-size: 20px;
+}
+#section1 .card3{
+    width: 1210px;
+    height: 160px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 112, 98, 0.15);
+}
+.card3 h3{
+    float: left;
+    color: #007062;
+    margin-top: 64px;
+    margin-left: 55px;
+}
+.card3 div{
+    float: right;
+    padding-top: 20px;
+    padding-right: 70px;
+}
+.card3 div img{
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/* section 2 */
+
+#s2_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+    text-align: center;
+    position: relative;
+}
+#s2_inner .title,
+#s2_inner .sub_title{
+    color: #007062;
+}
+#section2 .title_leaf_L{
+    position: absolute;
+    top: 60px;
+    left: 120px;
+}
+#section2 .title_leaf_R{
+    position: absolute;
+    top: 60px;
+    right: 120px;
+}
+.trial{
+    display: inline-block;
+    color: white;
+    background-color: #47bbac;
+    width: 400px;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 32px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.features{
+    padding: 0 75px;
+}
+.feature{
+    width: 560px;
+    height: 160px;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 200px;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 40px;
+}
+#s2_inner dl:first-of-type{
+    background-image: url(../images/feature_icon1.png);
+    float: left;
+    margin-bottom: 75px;
+}
+#s2_inner dl:nth-of-type(2){
+    background-image: url(../images/feature_icon2.png);
+    float: right;
+    margin-bottom: 75px;
+}
+#s2_inner dl:nth-of-type(3){
+    background-image: url(../images/feature_icon3.png);
+    float: left;
+}
+#s2_inner dl:last-of-type{
+    background-image: url(../images/feature_icon4.png);
+    float: right;
+}
+.feature h3{
+    font-size: 36px;
+    color: #007062;
+    margin-bottom: 20px;
+}
+.feature h3::before{
+    content: url(../images/sub2/bullet2.png);
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    transform: translateY(-6px);
+    margin-right: 15px;
+}
+.feature h3::after{
+    content: url(../images/sub2/bullet2.png);
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    transform: translateY(-6px);
+    margin-left: 15px;
+}
+.notice{
+    width: 1210px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    background-image: url(../images/sub2/notice.png);
+    background-position: 85px 50%;
+    background-repeat: no-repeat;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 112, 98, 0.15);
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-left: 245px;
+    box-sizing: border-box;
+}
+
+/* bg */
+
+.bg{
+    height: 2895px;
+    background-color: #f4f7f9;
+    background-image: url(../images/footer_bg.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+@media screen and (min-width: 2200px) {
+    .bg{
+        height: 2895px;
+        background-image: none;
+    }
+}
+
+/* section 3 */
+
+#s3_inner{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+#section3 .sub_title{
+    margin-top: 20px;
+    color: #2c988a;
+}
+#section3 .title{
+    color: #2c988a;
+    margin-bottom: 40px;
+}
+#section3 p{
+    margin-bottom: 40px;
+}
+#s3_inner>img{
+    margin-left: -150px;
+}
+.s3_text{
+    position: absolute;
+    right: 200px;
+    top: 0;
+}
+.s3_text>a{
+    display: block;
+    width: 200px;
+    height: 60px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 112, 98, 0.25);
+}
+.s3_text>a>img{
+    display: block;
+}
+
+/* footer */
+
+#footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+footer ul{
+    margin-bottom: 20px;
+}
+footer ul>li{
+    color: #3c7069;
+    font-size: 20px;
+    line-height: 100%;
+    float: left;
+}
+footer ul>li:nth-of-type(2){
+    padding: 0 15px;
+    margin: 0 15px;
+    border-left: 2px solid rgba(0, 112, 98, 0.5);
+    border-right: 2px solid rgba(0, 112, 98, 0.5);
+}
+footer p{
+    color: #3c7069;
+    margin-bottom: 30px;
+}
+footer ol{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+footer ol>li{
+    float: left;
+}
+footer ol>li:nth-of-type(2){
+    margin: 0 25px;
+}
